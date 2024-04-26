@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+        function greet (name) {
+        console.log(`Hello ${name}!`);
+      }
+      greet('Heman Omunyin');
+      greet('Philip');
+      greet('Koech');
+      greet('Kennedy');
+      greet('Pamela');
+      greet('Peter');
+      greet('Prince');
+      greet('Putito');
+      greet();
+
+      if (!name) {
+        console.log('Hi there!');
+      } else {
+        console.log(`Hello ${name}!`);
+      }
+
+      function convertToFahrenheit(celcius) {
+        return (celcius * 9/5) + 32;
+      }
+      console.log(convertToFahrenheit(25));
+
+
+      function convertToCelcius(Fahrenheit) {
+        return (Fahrenheit-32) * 5/9;
+      }
+
+      console.log(convertToCelcius(86));
+
+
+      function convertTemperature(degrees, unit) {
+        if (unit=== 'c') {
+          const result = convertToFahrenheit(degrees);
+          return `${result}F`;
+        } else if (unit==='f') {
+          const result = convertToCelcius(degrees);
+          return `$(result)C`;
+        }
+      }
+
+      console.log(convertTemperature(25,'C'));
+      console.log(convertTemperature(86,'F'));
+
+      
+      
+    </script>
+    
+
+
+  </body>
+</html>

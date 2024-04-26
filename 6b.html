@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Acoin Flip Game</title>
+  </head>
+  <body>
+    <script>
+      const randomNumber= Math.random();
+
+       
+     let result;
+
+      if (randomNumber<0.5) {
+        console.log('head');
+      } else {
+        console.log('tail');
+      }
+
+      if (randomNumber<0.5) {
+        result = 'head';
+      } else if (randomNumber>0.5) {
+        result = 'tail';
+      }
+
+
+      const guess = 'heads';
+
+      if (guess === result) {
+        console.log('You win!');
+      } else {
+        console.log('You lose!');
+      }
+
+      console.log(guess === result ? 'You win' : 'You lose');
+    </script>
+  </body>
+</html>
+
+
+
+
+
+

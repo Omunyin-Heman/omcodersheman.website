@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript practice</title>
+    <style>
+      .add-button {
+         background-color: yellow;
+         margin-bottom: 100px;
+        
+      }
+      .buy-button {
+        background-color: orange;
+      }
+      .p-description {
+        color: black;
+        font-weight: 700px;
+        font-family: roboto;
+      }
+      .Price{
+        color: rgb(205, 0, 0);
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <button class="Click-button" 
+    onclick="
+    alert('Heman says Martha is pregnant for Him');
+    alert('Heman says Martha is pregnant for Him');
+    
+    
+    ">
+      Click
+    </button>
+    
+    <button class="Name-button"
+    onclick="
+    alert('Heman says  Martha Mukoma is my Beloved Wife');
+    
+    ">
+      Heman Omunyin
+    </button>
+    
+    <button class="Beef-button"
+    onclick="
+    alert('Costing ksh 350 while stocks last!');
+    
+    ">
+      Chapati Beef
+    </button>
+    
+    <p>
+      Hello, World
+    </p>
+    
+    <p>
+      Today iwent to work early in the morning
+    </p>
+    
+    <button class="add-button">
+      Add to cart
+    </button>
+    
+    <button class="buy-button">
+      Buy now
+    </button>
+
+    <p class="p-description">
+      Adults Plain Cotton T-shirts
+    </p>
+
+    <p class="Price">
+      Price: $7.99
+    </p>
+
+    <button class="add-button"
+     onclick="
+      alert('Added');
+     
+     ">
+      Add to cart
+    </button>
+
+    <button class="buy-button"
+    
+    onclick="
+     alert('Loading');
+     alert('Purchased');
+     alert('place your order');
+     alert('Hi martha ilove you so much');
+    ">
+      Buy now
+    </button>
+
+    <button onclick="
+      cartQuantity += 4;
+      console.log(`cart Quantity:${cartQuantity}`);
+    ">
+      +4
+    </button>
+
+    <button onclick="
+      cartQuantity+=5
+      console.log(`cart Quantity:${cartQuantity}`);
+    ">
+      +5
+    </button>
+
+    <button onclick="
+      console.log('cat was reset');
+      console.log('cart Quantity:0');
+    ">
+      Remove from cart
+    </button>
+
+    <button onclick="
+      cartQuantity-=2
+      console.log(`cart Quantity:${cartQuantity}`);
+    ">
+      -2
+    </button>
+
+    <button onclick="
+      cartQuantity-=3
+      console.log(`cart Quantity:${cartQuantity}`);
+    ">
+      -3
+    </button>
+
+    <script>
+      console.log ('welcome');
+
+      const name = 'Heman Omunyin';
+      console.log(`my nameis : ${name}`);
+
+      const cost= 5+2*3+9;
+      console.log(`cost of food: &&{cost}`);
+
+      const tax= cost * 0.1;
+      console.log(`tax (10%): $${cost}`);
+
+      cost totalCost= cost + tax;
+      console.log(`Total Cost: $${totalCost}`);
+
+  
+      
+
+      let cartQuantity = 0;
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+

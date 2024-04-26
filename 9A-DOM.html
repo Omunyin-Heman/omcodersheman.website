@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <title>DOM</title>
+  <body>
+    <button>
+      Heman Omunyin
+    </button>
+
+    <button class="js-button">
+      9b
+    </button>
+
+    <button onclick="
+      document.querySelector('.js-choice')
+          .innerHTML = 'You chose: heads';
+    ">heads</button>
+
+    <button onclick="
+     document.querySelector('.js-choice')
+        .innerHTML = 'You chose: tails';
+    ">tails</button>
+
+
+    <p class="js-choice"></p>
+
+    <input placeholder="Name" class="js-name-input" 
+        onkeydown="
+          if (event.key=== 'Enter') {
+            displayMessage();
+    
+          }
+        
+        
+        ">
+    <button onclick="
+      displayMessage();
+    ">Submit</button>
+
+    <P class="js-message"></P>
+    
+    <script>
+      function displayMessage() {
+        const inputElement = document.querySelector('.js-name-input');
+      document.querySelector('.js-message')
+          .innerHTML = `Your name is:${inputElement.value}`;
+    
+      }
+      console.log(document.querySelector('button'));
+
+      
+      document.querySelector('.js-button')
+        .innerHTML = '9b done!';
+
+    </script>
+  </body>
+</html>
